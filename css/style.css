@@ -13,5 +13,73 @@
 
 .container {
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 5vh;
+}
+
+.nav_container {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_left , .nav_right {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list ul {
+    list-style: none;
+}
+
+.nav_list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#logo {
+    height: 30px;
+    margin: 0 20px;
+}
+
+.base_button {
+    color: white;
+    background-color: #0052FF;
+    border: none;
+    padding: 5px 10px;
+}
+
+div.base_button {
+    margin: 0 20px;
+}
+
+header > .container {
+    height: 60vh;
+    background-color: #ACCBE4;
+}
+
+.jumbo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.jumbo > h1 {
+    font-size: 4em;
+    font-weight: 800;
 }
