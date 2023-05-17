@@ -129,17 +129,15 @@ main {
     height: 95vh;
 }
 
-main > .container {
-    flex-direction: column;
-    justify-content: flex-start;
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
     
 }
 
 .container-small {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 0%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 main .container h2 {
@@ -153,21 +151,58 @@ main .container h2 {
     margin-right: 20px;
 }
 
-.my-col-1-3 {
-    width: calc((100% / 3) - 20px);
-    border: 2px solid lightgray;
-    min-height: 300px;
-}
-
 .my-row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
 
+.my-row.big-gutter {
+    margin: 0 -20px;
+}
+
+.my-row.big-gutter .col-1-3 {
+    width: calc((100% / 3) - 40px);
+    margin: 0 20px;
+}
+
+.col-1-3 {
+    width: calc((100% / 3) - 20px);
+    margin: 0 10px;
+}
+
+.col-full {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.my-row.big-gutter .col-full {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+}
+
+main .pricing-header {
+    text-align: center;
+}
+
+main .pricing-col {
+    border: 2px solid lightgray;
+}
+
+main .pricing-content, .pricing-header {
+    border-bottom: 2px solid lightgray;
+}
+
+
 /* debug */
 
 /* .debug .big-info {
     border: 5px dashed red;
     background-color: lightcoral;
+} */
+
+/* .debug .pricing-col {
+    min-height: 300px;
+    border: 3px dashed black;
+    background-color: chartreuse;
 } */
