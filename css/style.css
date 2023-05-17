@@ -18,7 +18,7 @@
 
 /* HEADER */
 
-.nav_container {
+.nav-container {
     background-color: white;
     width: 100vw;
     height: 5vh;
@@ -29,23 +29,23 @@
     z-index: 50;
 }
 
-.nav_left , .nav_right {
+.nav-left , .nav-right {
     display: flex;
     flex-direction: row;
     max-width: 50%;
     padding: 0 20px;
 }
 
-.nav_list {
+.nav-list {
     display: flex;
     align-items: center;
 }
 
-.nav_list ul {
+.nav-list ul {
     list-style: none;
 }
 
-.nav_list li {
+.nav-list li {
     font-size: 0.8em;
     display: inline-block;
     margin: 0 10px;
@@ -56,14 +56,14 @@
     margin: 0 20px;
 }
 
-.base_button {
+.base-button {
     color: white;
     background-color: #0052FF;
     border: none;
     padding: 10px 15px;
 }
 
-div.base_button {
+div.base-button {
     margin: 0 20px;
 }
 
@@ -100,9 +100,7 @@ header > .container {
     margin: 10px 0; 
 }
 
-main .info {
-    display: flex;
-}
+/* MAIN */
 
 .small-info {
     width: 28%;
@@ -123,8 +121,6 @@ main .info {
     font-size: 2.5em;
 }
 
-/* MAIN */
-
 main {
     height: 95vh;
 }
@@ -138,6 +134,8 @@ main .container {
 .container-small {
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 40px;
+
 }
 
 main .container h2 {
@@ -152,13 +150,14 @@ main .container h2 {
 }
 
 .my-row {
-    display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
 
 .my-row.big-gutter {
     margin: 0 -20px;
+    display: flex;
+    align-items: stretch;
 }
 
 .my-row.big-gutter .col-1-3 {
@@ -171,28 +170,75 @@ main .container h2 {
     margin: 0 10px;
 }
 
-.col-full {
-    width: calc(100% - 20px);
-    margin: 0 10px;
-}
-
 .my-row.big-gutter .col-full {
     width: calc(100% - 40px);
-    margin: 0 20px;
+    margin: 40px 20px;
+}
+
+main .col-1-3 .pricing-content, .feature-col {
+    padding: 20px 40px;
+    min-height: 500px;
+}
+
+main .col-full .pricing-content {
+    padding: 20px 40px;
+    width: 70%;
+}
+
+main .col-full .pricing-col {
+    position: relative;
+}
+
+main .col-full .col-full-button {
+    position: absolute;
+    right: 40px;
+    top: 80px;
+}
+
+main .pricing-content > p {
+    padding: 10px 0;
 }
 
 main .pricing-header {
     text-align: center;
+    padding: 10px 0;
 }
 
 main .pricing-col {
     border: 2px solid lightgray;
 }
 
-main .pricing-content, .pricing-header {
+main .pricing-header {
     border-bottom: 2px solid lightgray;
 }
 
+main .container-small .pricing-content hr {
+    color: lightgray;
+    width: 30%;
+    text-align: left;
+    margin: 20px 0 ;
+    padding: 0;
+}
+
+.feature-col .fa-check {
+    color: #0052FF;
+}
+
+.feature-col {
+    border-top: none;
+}
+
+.feature-col * {
+    padding: 10px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.periodo {
+    color: gray;
+}
 
 /* debug */
 
