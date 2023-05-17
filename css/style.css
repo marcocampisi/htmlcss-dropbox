@@ -253,6 +253,11 @@ main .container-small .pricing-content hr {
     width: 30%;
 }
 
+.cont-30 > h2 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
 #partner-button {
     color: gray;
     border: 2px solid gray;
@@ -262,6 +267,18 @@ main .container-small .pricing-content hr {
 
 section .col-1-3 > img {
     width: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column > .my-row .col-1-3 {
+    margin: 40px 0;
+}
+
+.column > .my-row .col-1-3 p {
+    margin-top: 40px;
 }
 
 /* debug */
