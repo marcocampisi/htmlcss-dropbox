@@ -12,6 +12,7 @@
 }
 
 .container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -121,16 +122,6 @@ header > .container {
     font-size: 2.5em;
 }
 
-main {
-    height: 95vh;
-}
-
-main .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
-
 .container-small {
     max-width: 1000px;
     margin: 0 auto;
@@ -138,9 +129,7 @@ main .container {
 
 }
 
-main .container h2 {
-    margin-top: 100px;
-    margin-bottom: 60px;
+.main-h2 {
     font-size: 2em;
     text-align: left;
 }
@@ -149,14 +138,20 @@ main .container h2 {
     margin-right: 20px;
 }
 
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
 .my-row {
+    display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
 
 .my-row.big-gutter {
     margin: 0 -20px;
-    display: flex;
     align-items: stretch;
 }
 
@@ -240,10 +235,6 @@ main .container-small .pricing-content hr {
     color: gray;
 }
 
-section > .container {
-    display: flex;
-}
-
 .cont-70 {
     width: 70%;
     position: relative;
@@ -267,6 +258,10 @@ section > .container {
     border: 2px solid gray;
     background-color: white;
     margin: 20px 0;
+}
+
+section .col-1-3 > img {
+    width: 100%;
 }
 
 /* debug */
