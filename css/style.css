@@ -12,18 +12,17 @@
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+/* HEADER */
 
 .nav_container {
     background-color: white;
     width: 100vw;
     height: 5vh;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -69,55 +68,62 @@ div.base_button {
 }
 
 header > .container {
-    height: 60vh;
+    display: flex;
+    max-width: 100%;
+    min-height: 60vh;
     background-color: #ACCBE4;
+    justify-content: center;
 }
 
 .jumbo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 60%;
+    width: 70%;
     height: 100%;
     position: relative;
     top: 60px;
 }
 
 .jumbo > h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
-.jumbo > .text {
-    width: 100%;
-    align-items: left;
+.info {
+    display: flex;
+    justify-content: space-between;
 }
 
-.jumbo > img {
-    width: 60%;
-    height: 60%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-}
-
-.text * {
+.info * {
     margin: 10px 0; 
 }
 
-.text > p {
-    width: 30%;
+main .info {
+    display: flex;
+}
+
+.small-info {
+    width: 28%;
+    display: inline-block;
+}
+
+.big-info {
+    display: inline-block;
+    width: 68%;
+}
+
+.big-info img {
+    width: 100%;
+    height: 100%;
 }
 
 .fa-arrow-down {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
     font-size: 2.5em;
 }
+
+/* MAIN */
 
 main {
     height: 95vh;
@@ -129,7 +135,14 @@ main > .container {
     
 }
 
-main > .container h2 {
+.container-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+}
+
+main .container h2 {
     margin-top: 100px;
     margin-bottom: 60px;
     font-size: 2em;
@@ -141,16 +154,20 @@ main > .container h2 {
 }
 
 .my-col-1-3 {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 20px);
     border: 2px solid lightgray;
+    min-height: 300px;
 }
 
 .my-row {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-    column-gap: 20px;
-    width: 60%;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
+
+/* debug */
+
+/* .debug .big-info {
+    border: 5px dashed red;
+    background-color: lightcoral;
+} */

@@ -13,7 +13,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="debug">
         <header>
             <nav class="nav_container">
                 <div class="nav_left">
@@ -40,40 +40,49 @@
             <div class="container">
                 <div class="jumbo">
                     <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-                    <div class="text">
-                        <p>Finalmente tutti i tuoi strumenti, contenuti e
+                    <div class="info">
+                        <div class="small-info">
+                            <p>Finalmente tutti i tuoi strumenti, contenuti e
                             collaboratori sono accessibili dallo stesso posto.
                             Dropbox Business è più di uno spazio di
                             archiviazione sicuro: è un modo intelligente e
                             integrato per ottimizzare il flusso di lavoro
                             esistente.
-                        </p>
-                        <button class="base_button">Inizia la tua prova gratuita</button>
-                        <p>Annulla in qualsiasi momento</p>
+                            </p>
+                            <button class="base_button">Inizia la tua prova gratuita</button>
+                            <p>Annulla in qualsiasi momento</p>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="big-info">
+                            <img src="img/jumbo.png" alt="">
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-down"></i>
-                    <img src="img/jumbo.png" alt="">
+                    
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="container">
-                <h2>Trova il piano business che fa per te</h2>
-                <div>
-                    <input type="radio" name="fatturazione" id="fatturazione1" value="Fatturazione mensile">
-                    <label for="fatturazione1">Fatturazione mensile</label>
-                    <input type="radio" name="fatturazione" id="fatturazione2" value="Fatturazione annuale">
-                    <label for="fatturazione2">Fatturazione annuale</label>
+            <section>
+                <div class="container">
+                    <h2>Trova il piano business che fa per te</h2>
+                    <div>
+                        <input type="radio" name="fatturazione" id="fatturazione1" value="Fatturazione mensile">
+                        <label for="fatturazione1">Fatturazione mensile</label>
+                        <input type="radio" name="fatturazione" id="fatturazione2" value="Fatturazione annuale">
+                        <label for="fatturazione2">Fatturazione annuale</label>
+                    </div>
                 </div>
-                <div class="container my-row">
+            </section>
+            <section>
+                <div class="container-small">
                     <div class="my-col-1-3">
                         <h2></h2>
                     </div>
                     <div class="my-col-1-3"></div>
                     <div class="my-col-1-3"></div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer>
