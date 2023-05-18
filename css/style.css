@@ -406,13 +406,23 @@ main section:nth-child(8) h2 {
 }
 
 main section:nth-child(8) .my-row.column {
-    max-width: 100%;
+    width: 1200px;
 }
 
-main section:nth-child(8) .col-1-3 {
+.my-row.column > .faq-col {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     border-top: 2px solid gray;
     padding: 40px 0;
+}
+
+.my-row.column > .faq-col:nth-child(3) {
+    border-bottom: 2px solid gray;
+}
+
+.my-row.column > .faq-col div {
+    padding: 0 40px;
 }
 
 .footer-top {
